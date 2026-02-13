@@ -10,11 +10,22 @@ View your app in AI Studio: https://ai.studio/apps/drive/1TE6NIiZOGNVOksWmINx0Pc
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
    `npm install`
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deploy with Docker (Synology / any Docker host)
+
+1. Create `.env` file:
+   ```
+   GEMINI_API_KEY=your-key-here
+   ```
+2. Build and start:
+   ```bash
+   docker compose up -d --build
+   ```
+3. Access at `http://your-nas-ip:3001`

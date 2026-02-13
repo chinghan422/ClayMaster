@@ -1,0 +1,17 @@
+services:
+  claymaster:
+    build: .
+    container_name: claymaster
+    restart: unless-stopped
+    ports:
+      - "3001:8080"
+    environment:
+      - NODE_ENV=production
+      - PORT=8080
+      - DB_PATH=/data/claymaster.db
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - claymaster_data:/data
+
+volumes:
+  claymaster_data:
