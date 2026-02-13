@@ -1,0 +1,7 @@
+{
+  "name": "ClayMaster - 黏土創意大賽",
+  "description": "一個專業且充滿活力的黏土比賽平台，支持參賽者作品展示、觀眾即時評分、以及管理員賽事安排與 AI 主題生成。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
